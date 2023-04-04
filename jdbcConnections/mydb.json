@@ -1,0 +1,18 @@
+{
+  "goid": "84449671abe2a5b143051dbdfdf7e762",
+  "name": "mydb",
+  "driverClass": "com.l7tech.jdbc.mysql.MySQLDriver",
+  "jdbcUrl": "jdbc://mydb/mydb",
+  "enabled": true,
+  "username": "hello",
+  "password": "${secpass.mydb.plaintext}",
+  "minPoolSize": 4,
+  "maxPoolSize": 8,
+  "properties": [
+    {
+      "name": "EnableCancelTimeout",
+      "value": "true"
+    }
+  ],
+  "checksum": "a5f8e5070bd9d9d3f04a1b7c70798409be7dae8d"
+}

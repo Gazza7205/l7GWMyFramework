@@ -1,0 +1,45 @@
+{
+  "goid": "84449671abe2a5b143051dbdfdf81d57",
+  "connectionGoid": "84449671abe2a5b143051dbdfdf81d55",
+  "name": "eventsOut",
+  "direction": "OUTBOUND",
+  "providerType": "WEBLOGIC JMS",
+  "initialContextFactoryClassname": "a",
+  "connectionFactoryName": "n",
+  "jndiUrl": "b",
+  "jndiSslDetails": {
+    "sslEnabled": false,
+    "sslForAuthenticationOnly": false,
+    "sslVerifyServerCertificate": false,
+    "sslVerifyServerHostname": false
+  },
+  "destinationType": "QUEUE",
+  "destinationName": "d",
+  "destinationSslDetails": {
+    "sslEnabled": false,
+    "sslForAuthenticationOnly": false,
+    "sslVerifyServerCertificate": false,
+    "sslVerifyServerHostname": false
+  },
+  "template": false,
+  "enabled": true,
+  "properties": [
+    {
+      "name": "outbound.poolType",
+      "value": "SESSION"
+    },
+    {
+      "name": "outbound.replyType",
+      "value": "AUTOMATIC"
+    },
+    {
+      "name": "outbound.messageFormat",
+      "value": "AUTOMATIC"
+    },
+    {
+      "name": "outbound.useMessageIdForCorrelation",
+      "value": "false"
+    }
+  ],
+  "checksum": "f8c6a0108c998495a5a78d1223129cb0f053f54d"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "My Daily Clean and Sync",
+  "policyName": "dailySync",
+  "jobType": "RECURRING",
+  "cronExpression": "0 0 0 */1 * ?",
+  "executeOnSingleNode": false,
+  "executeOnCreation": false,
+  "status": "SCHEDULED",
+  "goid": "84449671abe2a5b143051dbdfdf81e01",
+  "checksum": "02ebea211860a78a09f5f1c0ef56809b64fbd57c"
+}
