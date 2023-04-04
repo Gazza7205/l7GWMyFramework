@@ -4,6 +4,9 @@
   "name": "eventsOut",
   "direction": "OUTBOUND",
   "providerType": "WEBLOGIC JMS",
+  "checksum": "f8c6a0108c998495a5a78d1223129cb0f053f54d",
+  "enabled": true,
+  "template": false,
   "initialContextFactoryClassname": "a",
   "connectionFactoryName": "n",
   "jndiUrl": "b",
@@ -21,8 +24,6 @@
     "sslVerifyServerCertificate": false,
     "sslVerifyServerHostname": false
   },
-  "template": false,
-  "enabled": true,
   "properties": [
     {
       "name": "outbound.poolType",
@@ -40,6 +41,5 @@
       "name": "outbound.useMessageIdForCorrelation",
       "value": "false"
     }
-  ],
-  "checksum": "f8c6a0108c998495a5a78d1223129cb0f053f54d"
+  ]
 }
