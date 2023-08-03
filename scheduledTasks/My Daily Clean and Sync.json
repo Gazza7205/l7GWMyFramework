@@ -5,7 +5,7 @@
   "policyName": "dailySync",
   "jobType": "RECURRING",
   "cronExpression": "0 0 0 */1 * ?",
-  "executeOnSingleNode": false,
+  "executeOnSingleNode": true,
   "executeOnCreation": false,
   "status": "SCHEDULED"
 }
