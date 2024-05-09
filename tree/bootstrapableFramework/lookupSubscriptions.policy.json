@@ -93,11 +93,6 @@
               "True": {}
             }
           ]
-        },
-        {
-          "ExportVariables": [
-            "applicableSubscription"
-          ]
         }
       ]
     }

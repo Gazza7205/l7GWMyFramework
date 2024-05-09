@@ -125,12 +125,6 @@
             "body": "{\n  \"client\" : \"${client_id}\",\n  \"plan\" : \"${applicableSubscription}\",\n  \"service\" : \"${service_specific_var}\",\n  \"myDemoConfigVal\" : \"${gateway.myDemoConfigVal}\"\n}",
             "contentType": "application/json; charset=UTF-8"
           }
-        },
-        {
-          "ExportVariables": [
-            "applicableSubscription",
-            "client_id"
-          ]
         }
       ]
     }
