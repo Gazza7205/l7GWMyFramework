@@ -2,10 +2,79 @@
   "goid": "012ce653ed64a2f429d3907b248a6a2c",
   "guid": "3b1c8451-6af9-4983-ae6b-1f7e795ab571",
   "name": "sub_abc",
-  "checksum": "d797c87b313b4a1178dd51e3ff113c44ead55df4",
+  "policyType": "FRAGMENT",
+  "checksum": "9abaf6ef0b3c27e226a9dc20b8c439614a43b2cd",
   "folderPath": "/bootstrapableFramework/rules/ABC",
   "soap": false,
   "policy": {
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:HttpRoutingAssertion>\n            <L7p:KeyAlias stringValue=\"blah\"/>\n            <L7p:NonDefaultKeystoreId goidValue=\"00000000000000000000000000000002\"/>\n            <L7p:ProtectedServiceUrl stringValue=\"https://blah\"/>\n            <L7p:ProxyPassword stringValueNull=\"null\"/>\n            <L7p:ProxyUsername stringValueNull=\"null\"/>\n            <L7p:RequestHeaderRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\">\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"Cookie\"/>\n                    </L7p:item>\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"SOAPAction\"/>\n                    </L7p:item>\n                </L7p:Rules>\n            </L7p:RequestHeaderRules>\n            <L7p:RequestParamRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\"/>\n            </L7p:RequestParamRules>\n            <L7p:ResponseHeaderRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\">\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"Set-Cookie\"/>\n                    </L7p:item>\n                </L7p:Rules>\n            </L7p:ResponseHeaderRules>\n            <L7p:SamlAssertionVersion intValue=\"2\"/>\n            <L7p:TlsTrustedCertGoids goidArrayValue=\"included\">\n                <L7p:item goidValue=\"84449671abe2a5b143051dbdfdf7e704\"/>\n            </L7p:TlsTrustedCertGoids>\n            <L7p:TlsTrustedCertNames stringArrayValue=\"included\">\n                <L7p:item stringValue=\"www.broadcom.com\"/>\n            </L7p:TlsTrustedCertNames>\n            <L7p:UsesDefaultKeyStore booleanValue=\"false\"/>\n        </L7p:HttpRoutingAssertion>\n        <L7p:JdbcQuery>\n            <L7p:ConnectionName stringValue=\"mydb\"/>\n            <L7p:ConvertVariablesToStrings booleanValue=\"false\"/>\n            <L7p:SqlQuery stringValue=\"select amazing from awesome;\"/>\n        </L7p:JdbcQuery>\n        <L7p:JmsRoutingAssertion>\n            <L7p:EndpointName stringValue=\"eventsOut\"/>\n            <L7p:EndpointOid goidValue=\"84449671abe2a5b143051dbdfdf81d57\"/>\n            <L7p:RequestJmsMessagePropertyRuleSet jmsMessagePropertyRuleSet=\"included\">\n                <L7p:Rules jmsMessagePropertyRuleArray=\"included\"/>\n            </L7p:RequestJmsMessagePropertyRuleSet>\n            <L7p:ResponseJmsMessagePropertyRuleSet jmsMessagePropertyRuleSet=\"included\">\n                <L7p:Rules jmsMessagePropertyRuleArray=\"included\"/>\n            </L7p:ResponseJmsMessagePropertyRuleSet>\n        </L7p:JmsRoutingAssertion>\n    </wsp:All>\n</wsp:Policy>\n"
+    "code": {
+      "All": [
+        {
+          "HttpRouting": {
+            "keyAlias": "blah",
+            "nonDefaultKeystoreId": "00000000000000000000000000000002",
+            "protectedServiceUrl": "https://blah",
+            "requestHeaderRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": [
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "Cookie"
+                },
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "SOAPAction"
+                }
+              ]
+            },
+            "requestParamRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": []
+            },
+            "responseHeaderRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": [
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "Set-Cookie"
+                }
+              ]
+            },
+            "samlAssertionVersion": 2,
+            "tlsTrustedCertGoids": [
+              "84449671abe2a5b143051dbdfdf7e704"
+            ],
+            "tlsTrustedCertNames": [
+              "www.broadcom.com"
+            ],
+            "usesDefaultKeyStore": false
+          }
+        },
+        {
+          "JdbcQuery": {
+            "connectionName": "mydb",
+            "convertVariablesToStrings": false,
+            "sqlQuery": "select amazing from awesome;"
+          }
+        },
+        {
+          "JmsRouting": {
+            "endpointName": "eventsOut",
+            "endpointOid": "84449671abe2a5b143051dbdfdf81d57",
+            "requestJmsMessagePropertyRuleSet": {
+              ".type": "jmsMessagePropertyRuleSet",
+              "rules": []
+            },
+            "responseJmsMessagePropertyRuleSet": {
+              ".type": "jmsMessagePropertyRuleSet",
+              "rules": []
+            }
+          }
+        }
+      ]
+    }
   }
 }

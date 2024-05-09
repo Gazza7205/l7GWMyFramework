@@ -2,10 +2,45 @@
   "goid": "84449671abe2a5b143051dbdfdf7e6db",
   "guid": "e513b52b-7d41-416f-9906-17f8e12b6d6a",
   "name": "ABC Rules",
-  "checksum": "7127b6044fcafaef8321391dcc22174fa261b751",
+  "policyType": "FRAGMENT",
+  "checksum": "68e51bd88ca08478e3de7bea20c26a60d6037d64",
   "folderPath": "/bootstrapableFramework/rules",
   "soap": false,
   "policy": {
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:SetVariable>\n            <L7p:Base64Expression stringValue=\"JHtnYXRld2F5LmF9\"/>\n            <L7p:VariableToSet stringValue=\"a\"/>\n        </L7p:SetVariable>\n        <wsp:OneOrMore wsp:Usage=\"Required\">\n            <L7p:TrueAssertion/>\n            <L7p:Include>\n                <L7p:PolicyGuid stringValue=\"3b1c8451-6af9-4983-ae6b-1f7e795ab571\"/>\n            </L7p:Include>\n            <L7p:Include>\n                <L7p:PolicyGuid stringValue=\"a88d82dd-e024-4c22-a6db-a8fc91e8b105\"/>\n            </L7p:Include>\n            <L7p:Include>\n                <L7p:PolicyGuid stringValue=\"e15a5669-0bf8-4873-97e4-d21464a7fe42\"/>\n            </L7p:Include>\n        </wsp:OneOrMore>\n    </wsp:All>\n</wsp:Policy>\n"
+    "code": {
+      "All": [
+        {
+          "SetVariable": {
+            "expression": "${gateway.a}",
+            "variable": "a"
+          }
+        },
+        {
+          "OneOrMore": [
+            {
+              "True": {}
+            },
+            {
+              "Include": {
+                "policyGuid": "3b1c8451-6af9-4983-ae6b-1f7e795ab571",
+                "policyName": "sub_abc"
+              }
+            },
+            {
+              "Include": {
+                "policyGuid": "a88d82dd-e024-4c22-a6db-a8fc91e8b105",
+                "policyName": "sub_def"
+              }
+            },
+            {
+              "Include": {
+                "policyGuid": "e15a5669-0bf8-4873-97e4-d21464a7fe42",
+                "policyName": "sub_ghi"
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
 }

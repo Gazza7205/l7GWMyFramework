@@ -1,7 +1,7 @@
 {
   "goid": "84449671abe2a5b143051dbdfdf81e01",
   "name": "My Daily Clean and Sync",
-  "checksum": "02ebea211860a78a09f5f1c0ef56809b64fbd57c",
+  "checksum": "a211255dff5b8f6824e539a5e32a561296c91a56",
   "policyName": "dailySync",
   "jobType": "RECURRING",
   "cronExpression": "0 0 0 */1 * ?",

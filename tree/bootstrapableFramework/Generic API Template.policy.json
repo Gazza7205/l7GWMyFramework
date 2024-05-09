@@ -2,10 +2,26 @@
   "goid": "e5cd57980c53d67b99eca6189e2e4db6",
   "guid": "a9f7163b-d17a-42e8-9b75-855ca6f67c08",
   "name": "Generic API Template",
-  "checksum": "130b6766bc4beecbdc219a9f7d939f784c05e4a5",
+  "policyType": "FRAGMENT",
+  "checksum": "6eee5aefed1703176a30aa780af9a649cffd276a",
   "folderPath": "/bootstrapableFramework",
   "soap": false,
   "policy": {
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"7079ed73-1730-4679-bdc0-6cc56b9fb4bc\"/>\n        </L7p:Include>\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"e513b52b-7d41-416f-9906-17f8e12b6d6a\"/>\n        </L7p:Include>\n    </wsp:All>\n</wsp:Policy>\n"
+    "code": {
+      "All": [
+        {
+          "Include": {
+            "policyGuid": "7079ed73-1730-4679-bdc0-6cc56b9fb4bc",
+            "policyName": "enforcePlan"
+          }
+        },
+        {
+          "Include": {
+            "policyGuid": "e513b52b-7d41-416f-9906-17f8e12b6d6a",
+            "policyName": "ABC Rules"
+          }
+        }
+      ]
+    }
   }
 }

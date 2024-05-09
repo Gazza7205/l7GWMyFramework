@@ -2,10 +2,58 @@
   "goid": "012ce653ed64a2f429d3907b248a6a61",
   "guid": "e15a5669-0bf8-4873-97e4-d21464a7fe42",
   "name": "sub_ghi",
-  "checksum": "e39d354d07d9a2944658244c3701b4f8f6b0b13d",
+  "policyType": "FRAGMENT",
+  "checksum": "2f9651615b341dd78c6095e7b3c50b4140debfd6",
   "folderPath": "/bootstrapableFramework/rules/GHI",
   "soap": false,
   "policy": {
-    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:HttpRoutingAssertion>\n            <L7p:KeyAlias stringValue=\"blah\"/>\n            <L7p:NonDefaultKeystoreId goidValue=\"00000000000000000000000000000002\"/>\n            <L7p:ProtectedServiceUrl stringValue=\"https://blah\"/>\n            <L7p:ProxyPassword stringValueNull=\"null\"/>\n            <L7p:ProxyUsername stringValueNull=\"null\"/>\n            <L7p:RequestHeaderRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\">\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"Cookie\"/>\n                    </L7p:item>\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"SOAPAction\"/>\n                    </L7p:item>\n                </L7p:Rules>\n            </L7p:RequestHeaderRules>\n            <L7p:RequestParamRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\"/>\n            </L7p:RequestParamRules>\n            <L7p:ResponseHeaderRules httpPassthroughRuleSet=\"included\">\n                <L7p:ForwardAll booleanValue=\"true\"/>\n                <L7p:Rules httpPassthroughRules=\"included\">\n                    <L7p:item httpPassthroughRule=\"included\">\n                        <L7p:Name stringValue=\"Set-Cookie\"/>\n                    </L7p:item>\n                </L7p:Rules>\n            </L7p:ResponseHeaderRules>\n            <L7p:SamlAssertionVersion intValue=\"2\"/>\n            <L7p:TlsTrustedCertGoids goidArrayValue=\"included\">\n                <L7p:item goidValue=\"84449671abe2a5b143051dbdfdf7e704\"/>\n            </L7p:TlsTrustedCertGoids>\n            <L7p:TlsTrustedCertNames stringArrayValue=\"included\">\n                <L7p:item stringValue=\"www.broadcom.com\"/>\n            </L7p:TlsTrustedCertNames>\n            <L7p:UsesDefaultKeyStore booleanValue=\"false\"/>\n        </L7p:HttpRoutingAssertion>\n    </wsp:All>\n</wsp:Policy>\n"
+    "code": {
+      "All": [
+        {
+          "HttpRouting": {
+            "keyAlias": "blah",
+            "nonDefaultKeystoreId": "00000000000000000000000000000002",
+            "protectedServiceUrl": "https://blah",
+            "requestHeaderRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": [
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "Cookie"
+                },
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "SOAPAction"
+                }
+              ]
+            },
+            "requestParamRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": []
+            },
+            "responseHeaderRules": {
+              ".type": "httpPassthroughRuleSet",
+              "forwardAll": true,
+              "rules": [
+                {
+                  ".type": "httpPassthroughRule",
+                  "name": "Set-Cookie"
+                }
+              ]
+            },
+            "samlAssertionVersion": 2,
+            "tlsTrustedCertGoids": [
+              "84449671abe2a5b143051dbdfdf7e704"
+            ],
+            "tlsTrustedCertNames": [
+              "www.broadcom.com"
+            ],
+            "usesDefaultKeyStore": false
+          }
+        }
+      ]
+    }
   }
 }
