@@ -3,7 +3,6 @@
   "guid": "5fde4fb4-72b4-4435-a564-fd1b9990f494",
   "name": "dailySync",
   "policyType": "POLICY_BACKED_BACKGROUND_TASK",
-  "checksum": "1222498b94a80f462d7df1b892521c46340471eb",
   "folderPath": "/bootstrapableFramework/utils",
   "soap": false,
   "policy": {
