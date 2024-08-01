@@ -1,0 +1,39 @@
+{
+  "goid": "84449671abe2a5b143051dbdfdf81d07",
+  "guid": "5fde4fb4-72b4-4435-a564-fd1b9990f494",
+  "name": "dailySync",
+  "policyType": "POLICY_BACKED_BACKGROUND_TASK",
+  "checksum": "b23705a69e5d6f3050157065306b022d1a5c65e6",
+  "folderPath": "/bootstrapableFramework/utils",
+  "soap": false,
+  "policy": {
+    "code": {
+      "All": [
+        {
+          "OneOrMore": [
+            {
+              "True": {}
+            },
+            {
+              "All": [
+                {
+                  "Include": {
+                    "policyGuid": "e513b52b-7d41-416f-9906-17f8e12b6d6a",
+                    "policyName": "ABC Rules"
+                  }
+                },
+                {
+                  "JavaScript": {
+                    "executionTimeout": "",
+                    "name": "hello",
+                    "script": "var a = 0;"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

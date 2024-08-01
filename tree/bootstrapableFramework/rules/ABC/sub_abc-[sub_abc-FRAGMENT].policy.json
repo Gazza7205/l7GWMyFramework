@@ -1,10 +1,10 @@
 {
-  "goid": "012ce653ed64a2f429d3907b248a6a61",
-  "guid": "e15a5669-0bf8-4873-97e4-d21464a7fe42",
-  "name": "sub_ghi",
+  "goid": "012ce653ed64a2f429d3907b248a6a2c",
+  "guid": "3b1c8451-6af9-4983-ae6b-1f7e795ab571",
+  "name": "sub_abc",
   "policyType": "FRAGMENT",
-  "checksum": "2f9651615b341dd78c6095e7b3c50b4140debfd6",
-  "folderPath": "/bootstrapableFramework/rules/GHI",
+  "checksum": "6f0ba17c7efb9ffc8968f069f60f143ad9c44046",
+  "folderPath": "/bootstrapableFramework/rules/ABC",
   "soap": false,
   "policy": {
     "code": {
@@ -51,6 +51,27 @@
               "www.broadcom.com"
             ],
             "usesDefaultKeyStore": false
+          }
+        },
+        {
+          "JdbcQuery": {
+            "connectionName": "mydb",
+            "convertVariablesToStrings": false,
+            "sqlQuery": "select amazing from awesome;"
+          }
+        },
+        {
+          "JmsRouting": {
+            "endpointName": "eventsOut",
+            "endpointOid": "84449671abe2a5b143051dbdfdf81d57",
+            "requestJmsMessagePropertyRuleSet": {
+              ".type": "jmsMessagePropertyRuleSet",
+              "rules": []
+            },
+            "responseJmsMessagePropertyRuleSet": {
+              ".type": "jmsMessagePropertyRuleSet",
+              "rules": []
+            }
           }
         }
       ]

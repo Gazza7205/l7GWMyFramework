@@ -3,7 +3,7 @@
   "guid": "7079ed73-1730-4679-bdc0-6cc56b9fb4bc",
   "name": "enforcePlan",
   "policyType": "FRAGMENT",
-  "checksum": "5cc430117d32bac75848c09f28a49dee6b5ba36a",
+  "checksum": "612b7b4a75ff89f925c82f50780c35f0bf765c48",
   "folderPath": "/bootstrapableFramework",
   "soap": false,
   "policy": {
@@ -23,7 +23,7 @@
                 "expression1": "${client_id}",
                 "predicates": [
                   {
-                    ".type": "stringLength",
+                    ".type": ":stringLength",
                     "max": -1,
                     "min": 1
                   }
@@ -54,7 +54,7 @@
                     "expression2": "plan_a",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "rightValue": "plan_a"
                       }
                     ]
@@ -75,7 +75,7 @@
                     "expression2": "plan_b",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "rightValue": "plan_b"
                       }
                     ]
@@ -97,7 +97,7 @@
                     "expression2": "plan_c",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "rightValue": "plan_c"
                       }
                     ]

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "id": "a73cc8d6-5c93-4b2e-a8dc-e27d5d636d8d",
+    "name": "Gateway Graphman Bundle - 2024-08-01T06:10:36.370Z",
+    "author": "admin",
+    "hostname": "localhost",
+    "timestamp": "2024-08-01T06:10:36.370Z"
+  },
+  "defaultAction": "NEW_OR_UPDATE",
+  "mappings": {
+    "clusterProperties": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "a"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "b"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "myDemoConfigVal"
+        }
+      }
+    ],
+    "jdbcConnections": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "mydb"
+        }
+      }
+    ],
+    "jmsDestinations": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "eventsOut",
+          "direction": "OUTBOUND",
+          "providerType": "WEBLOGIC JMS"
+        }
+      }
+    ],
+    "keys": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "alias": "blah",
+          "keystoreId": "00000000000000000000000000000002"
+        }
+      }
+    ],
+    "policies": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "ABC Rules",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "Generic API Template",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "dailySync",
+          "policyType": "POLICY_BACKED_BACKGROUND_TASK"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "enforcePlan",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "globalReceived",
+          "policyType": "GLOBAL"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "lookupSubscriptions",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "sub_abc",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "sub_def",
+          "policyType": "FRAGMENT"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "sub_ghi",
+          "policyType": "FRAGMENT"
+        }
+      }
+    ],
+    "scheduledTasks": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "My Daily Clean and Sync"
+        }
+      }
+    ],
+    "secrets": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "mydb"
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "name": "newpasswd"
+        }
+      }
+    ],
+    "trustedCerts": [
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "thumbprintSha1": "iZJ/xtwDDv+gic0J9idwO9XqYVw="
+        }
+      },
+      {
+        "action": "NEW_OR_EXISTING",
+        "source": {
+          "thumbprintSha1": "4w230rgczdepEDjkuO8gYsOfyTU="
+        }
+      }
+    ]
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "goid": "012ce653ed64a2f429d3907b248a6a47",
-  "guid": "a88d82dd-e024-4c22-a6db-a8fc91e8b105",
-  "name": "sub_def",
+  "goid": "012ce653ed64a2f429d3907b248a6a61",
+  "guid": "e15a5669-0bf8-4873-97e4-d21464a7fe42",
+  "name": "sub_ghi",
   "policyType": "FRAGMENT",
-  "checksum": "2365a2222e01c77b5729e103f736ae744300457b",
-  "folderPath": "/bootstrapableFramework/rules/DEF",
+  "checksum": "1c1ecb4bf2121b87c427b1bcae4feb69689495f4",
+  "folderPath": "/bootstrapableFramework/rules/GHI",
   "soap": false,
   "policy": {
     "code": {

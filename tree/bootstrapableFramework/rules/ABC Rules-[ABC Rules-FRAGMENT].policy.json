@@ -3,7 +3,7 @@
   "guid": "e513b52b-7d41-416f-9906-17f8e12b6d6a",
   "name": "ABC Rules",
   "policyType": "FRAGMENT",
-  "checksum": "68e51bd88ca08478e3de7bea20c26a60d6037d64",
+  "checksum": "0dced1af2ece9d0c7f9261bf026c26e4ae7f12c1",
   "folderPath": "/bootstrapableFramework/rules",
   "soap": false,
   "policy": {
