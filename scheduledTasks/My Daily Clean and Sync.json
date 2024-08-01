@@ -6,6 +6,6 @@
   "jobType": "RECURRING",
   "cronExpression": "0 0 0 */1 * ?",
   "executeOnSingleNode": true,
-  "executeOnCreation": "false",
+  "executeOnCreation": false,
   "status": "SCHEDULED"
 }
