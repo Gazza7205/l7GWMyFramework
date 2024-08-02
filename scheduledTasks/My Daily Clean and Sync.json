@@ -3,7 +3,7 @@
   "name": "My Daily Clean and Sync",
   "checksum": "a211255dff5b8f6824e539a5e32a561296c91a56",
   "policyName": "dailySync",
-  "jobType": "RECURRINGs",
+  "jobType": "RECURRING",
   "cronExpression": "0 0 0 */1 * ?",
   "executeOnSingleNode": true,
   "executeOnCreation": false,
