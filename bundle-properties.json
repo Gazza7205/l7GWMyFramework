@@ -99,7 +99,7 @@
         }
       },
       {
-        "action": "DELETE",
+        "action": "NEW_OR_EXISTING",
         "source": {
           "name": "sub_abc",
           "policyType": "FRAGMENT"
