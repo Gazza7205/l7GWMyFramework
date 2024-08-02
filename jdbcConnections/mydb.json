@@ -1,6 +1,6 @@
 {
   "goid": "84449671abe2a5b143051dbdfdf7e762",
-  "name": "mydb",
+  "name": "mydbs",
   "checksum": "a5f8e5070bd9d9d3f04a1b7c70798409be7dae8d",
   "enabled": true,
   "driverClass": "com.l7tech.jdbc.mysql.MySQLDriver",
