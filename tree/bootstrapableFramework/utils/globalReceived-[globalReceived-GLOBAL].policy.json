@@ -1,0 +1,40 @@
+{
+  "goid": "8f163e7845a268e63aa1e18e9fb81be9",
+  "guid": "d46a596b-1900-40ea-b06c-1e5c6488cdec",
+  "name": "globalReceived",
+  "policyType": "GLOBAL",
+  "tag": "message-received",
+  "checksum": "2f7ad2ffcbbbb3b63b0b2fc6478cd3f8b88b7d5e",
+  "folderPath": "/bootstrapableFramework/utils",
+  "soap": false,
+  "policy": {
+    "code": {
+      "All": [
+        {
+          "Comment": "Policy Fragment: globalReceived"
+        },
+        {
+          "OneOrMore": [
+            {
+              "True": {}
+            },
+            {
+              "JmsRouting": {
+                "endpointName": "eventsOut",
+                "endpointOid": "84449671abe2a5b143051dbdfdf81d57",
+                "requestJmsMessagePropertyRuleSet": {
+                  ".type": "jmsMessagePropertyRuleSet",
+                  "rules": []
+                },
+                "responseJmsMessagePropertyRuleSet": {
+                  ".type": "jmsMessagePropertyRuleSet",
+                  "rules": []
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

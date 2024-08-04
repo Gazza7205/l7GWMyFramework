@@ -4,7 +4,7 @@
   "name": "eventsOut",
   "direction": "OUTBOUND",
   "providerType": "WEBLOGIC JMS",
-  "checksum": "f8c6a0108c998495a5a78d1223129cb0f053f54d",
+  "checksum": "af0c088c643fea6cbc43856f8fd3f9b27b74d542",
   "enabled": true,
   "template": false,
   "initialContextFactoryClassname": "a",

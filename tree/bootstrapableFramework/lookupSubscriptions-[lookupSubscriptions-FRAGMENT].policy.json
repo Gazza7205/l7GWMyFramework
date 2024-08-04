@@ -3,7 +3,7 @@
   "guid": "0303de0b-1ce7-46f3-bef4-95e4ebe8de5d",
   "name": "lookupSubscriptions",
   "policyType": "FRAGMENT",
-  "checksum": "6389be71f853a73876efb16b4f40ae48a8df6c9a",
+  "checksum": "ab0d2d63a8e258a375eb4f738f0f01c9269ebaec",
   "folderPath": "/bootstrapableFramework",
   "soap": false,
   "policy": {
@@ -26,7 +26,7 @@
                     "operator": "CONTAINS",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "operator": "CONTAINS",
                         "rightValue": "${client_id}"
                       }
@@ -50,7 +50,7 @@
                     "operator": "CONTAINS",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "operator": "CONTAINS",
                         "rightValue": "${client_id}"
                       }
@@ -74,7 +74,7 @@
                     "operator": "CONTAINS",
                     "predicates": [
                       {
-                        ".type": "binary",
+                        ".type": ":binary",
                         "operator": "CONTAINS",
                         "rightValue": "${client_id}"
                       }

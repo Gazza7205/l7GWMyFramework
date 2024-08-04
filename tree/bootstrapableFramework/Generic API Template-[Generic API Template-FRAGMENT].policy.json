@@ -3,7 +3,7 @@
   "guid": "a9f7163b-d17a-42e8-9b75-855ca6f67c08",
   "name": "Generic API Template",
   "policyType": "FRAGMENT",
-  "checksum": "6eee5aefed1703176a30aa780af9a649cffd276a",
+  "checksum": "e5bf018d61d9f5598990eba033a752598f592d0e",
   "folderPath": "/bootstrapableFramework",
   "soap": false,
   "policy": {

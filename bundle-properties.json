@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "id": "a73cc8d6-5c93-4b2e-a8dc-e27d5d636d8d",
+    "name": "Gateway Graphman Bundle - 2024-08-01T06:10:36.370Z",
+    "author": "admin",
+    "hostname": "localhost",
+    "timestamp": "2024-08-01T06:10:36.370Z"
+  },
+  "defaultAction": "NEW_OR_UPDATE"
+}
